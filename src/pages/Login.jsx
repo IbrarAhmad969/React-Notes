@@ -29,7 +29,7 @@ const Login = () => {
         data.password
       );
       console.log("User Logged In: ", userCredential);
-      navigate("/signup"); // Redirect to dashboard after login
+      navigate("/dashboard"); // Redirect to dashboard after login
     } catch (error) {
       if (error.code === "auth/invalid-credential") {
         setErrorMessage("Invalid username or password. Please try again.");

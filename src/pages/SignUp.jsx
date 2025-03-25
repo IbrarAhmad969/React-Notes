@@ -34,6 +34,7 @@ const SignUp = () => {
         data.email, 
         data.password,
       )
+      navigate("/dashboard");
     } catch (error) {
       setErrorMessage(error.message)
     }
